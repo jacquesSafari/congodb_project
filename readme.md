@@ -7,4 +7,3 @@ or in documentation download at doc\install.htm
 Changes the Section of SGBDR in Java
 =====================================
 - First public version
-- 
