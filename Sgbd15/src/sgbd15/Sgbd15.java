@@ -15,13 +15,34 @@ import sample.Kernerl.*;
  *
  * @author elsa
  */
-public class Sgbd15 {
+public class Sgbd15 extends Application {
 
-    /**
-     * @param args the command line arguments
-     */
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.show();
+    }
+
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        /*
+        Database db = new Database();
+        boolean is_created = db.createDB();
+        if(is_created){
+            System.out.println("Enfin ca marhec");
+        }
+        else{
+            System.out.println("ca marche pas !!);
+        }
+        Table tb = new Table();
+       // tb.createTable("User");
+      //  tb.insertData("user","enfant");
+        tb.updateData("user","enfant");
+        //tb.deleteData("user","enfant");
+        //launch(args);
+
     }
     
 }
