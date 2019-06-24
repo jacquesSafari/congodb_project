@@ -1,4 +1,4 @@
-package sample.Kernerl;
+package sgbd15.Kernerl;
 //=========================
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;

@@ -1,4 +1,4 @@
-package sample.Kernerl;
+package sgbd15.Kernerl;
 
 public class Field{
     private String nom;
