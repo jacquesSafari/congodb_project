@@ -1,5 +1,4 @@
 package sample;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,23 +17,8 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        /*
-        Database db = new Database();
-        boolean is_created = db.createDB();
-        if(is_created){
-            System.out.println("C'est fait");
-        }
-        else{
-            System.out.println("Not done");
-        }
-        //Table tb = new Table();
-       // tb.insertData("ville","commune");*/
-        Table tb = new Table();
-       // tb.createTable("maison");
-      //  tb.insertData("maison","enfant");
-        tb.updateData("maison","enfant");
-        //tb.deleteData("maison","enfant");
-        //launch(args);
+        
+        //tester ic
 
     }
 }
