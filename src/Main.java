@@ -14,6 +14,7 @@ public class Main {
     static Engine engine = new Engine();
 
     public static void main(String[] args) {
+        display();
         System.out.println("Pour quitter appuiyer sur q ou Q puis valider");
 
         String array[];
@@ -23,6 +24,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.print(">  ");
             requette = scanner.nextLine();
+            //requette = requette.trim();
             requette = requette.toLowerCase();
             array = requette.split(" ");
 
@@ -35,7 +37,7 @@ public class Main {
 
             switch (checkQuery(array[0])) {
                 case 1:
-                    System.out.println("Select");
+                    engine.inSelectQuerry(array);
                     break;
                 case 2:
                     if (array.length == 3) {
@@ -46,6 +48,7 @@ public class Main {
                         System.out.println("Message -> La creation d'une base de donnee ne prend que 3 mot cle");
                         System.out.println("CREATE DATABASE NOM_DB \nNOM_DB : est le nom que vous donner a la base de donnees");
                     }
+                    break;
                 case 3:
                     if (array.length == 3) {
                         engine.setRequette(array);
@@ -61,7 +64,7 @@ public class Main {
                         engine.typeOfQueryInDrop(engine.getRequette());
                     } else {
                         System.out.println("Message -> La suppression d'une base de données ne prend que 3 mot cle");
-                        System.out.println("CREATE DATABASE NOM_DB\nNOM_DB : est le nom de la base de données à supprimer");
+                        System.out.println("DROP DATABASE NOM_DB\nNOM_DB : est le nom de la base de données à supprimer");
                     }
                     break;
                 case 5:
@@ -71,6 +74,9 @@ public class Main {
                         System.out.println("Message -> L'utilisation d'une base de donnée ne prend que 2 mot clé");
                         System.out.println("USE NOM_DB\nNOM_DB : est le nom de la base de donner que l'on veut utiliser");
                     }
+                    break;
+                case 6:
+                    engine.inInsertQuery(array);
                     break;
                 case 0:
                     System.out.println("Message -> Requette incorrecte ou mal saisie");
@@ -96,6 +102,21 @@ public class Main {
             return 4;
         if (query.equals("use"))
             return 5;
+        if(query.equals("insert"))
+            return 6;
         return 0;
+    }
+
+    public static void display(){
+        System.out.println(" _______________________________________________________________________ ");
+        System.out.println("|                         Welcome to congo_db project                   |");
+        System.out.println("|                               Java SE Project                         |");
+        System.out.println("|                            Prof : Mr Jacques SAFARI                   |");
+        System.out.println("| Réaliser par le groupe 24 :                                           |");
+        System.out.println("|                                                  ZAINA KAZADI Josianne|");
+        System.out.println("|                                                 ZONGWE BENONI Benjamin|");
+        System.out.println("|                            -- ESIS 2019 --                            |");
+        System.out.println("|                             by IntelliJ IDEA                          |");
+        System.out.println("|_______________________________________________________________________|" + "\n");
     }
 }

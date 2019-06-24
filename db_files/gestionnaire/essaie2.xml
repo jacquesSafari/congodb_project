@@ -1,0 +1,11 @@
+<org.database.Table>
+  <tableName>essaie2</tableName>
+  <nomChamps>
+    <string>champ</string>
+    <string>champs</string>
+    <string>champ1</string>
+    <string>champ2</string>
+  </nomChamps>
+  <lignes/>
+  <length>4</length>
+</org.database.Table>
