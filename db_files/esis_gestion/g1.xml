@@ -1,0 +1,11 @@
+<org.database.Table>
+  <tableName>g1</tableName>
+  <nomChamps>
+    <string>id</string>
+    <string>nom</string>
+    <string>postnom</string>
+    <string>annee</string>
+  </nomChamps>
+  <lignes/>
+  <length>4</length>
+</org.database.Table>

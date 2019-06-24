@@ -1,0 +1,30 @@
+<org.database.Table>
+  <tableName>g2</tableName>
+  <nomChamps>
+    <string>id</string>
+    <string>nom</string>
+    <string>postnom</string>
+    <string>annee</string>
+  </nomChamps>
+  <lignes>
+    <org.database.Row>
+      <datas>
+        <string>1</string>
+        <string>zongwe</string>
+        <string>benoni</string>
+        <string>2019</string>
+      </datas>
+      <taille>4</taille>
+    </org.database.Row>
+    <org.database.Row>
+      <datas>
+        <string>2</string>
+        <string>tumaini</string>
+        <string>mungumwa</string>
+        <string>2019</string>
+      </datas>
+      <taille>4</taille>
+    </org.database.Row>
+  </lignes>
+  <length>4</length>
+</org.database.Table>

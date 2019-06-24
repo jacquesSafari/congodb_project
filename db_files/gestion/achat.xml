@@ -1,0 +1,25 @@
+<org.database.Table>
+  <tableName>achat</tableName>
+  <nomChamps>
+    <string>nom</string>
+    <string>prix</string>
+    <string>date_expiration</string>
+  </nomChamps>
+  <lignes>
+    <org.database.Row>
+      <datas>
+        <string>ben</string>
+        <string>150</string>
+        <string>mai</string>
+      </datas>
+    </org.database.Row>
+    <org.database.Row>
+      <datas>
+        <string>bonbon</string>
+        <string>1500</string>
+        <string>mars</string>
+      </datas>
+    </org.database.Row>
+  </lignes>
+  <length>3</length>
+</org.database.Table>
