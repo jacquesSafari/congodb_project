@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<p>
+  <indentifiant identite="1">
+      <nom>kaz</nom>
+      <prenom>Jesus</prenom>
+      <age>20</age>
+  </indentifiant>
+<indentifiant id="1">
+    <nom>kid</nom>
+    <prenom>Jesus</prenom>
+  </indentifiant>
+<indentifiant id="1">
+    <enfants>12</enfants>
+    <parents>14</parents>
+    <master>16</master>
+  </indentifiant>
+</p>
