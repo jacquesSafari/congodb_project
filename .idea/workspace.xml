@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa9795fb-3506-4c94-874e-da455d8f4a6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/congodb_project/com/congodb/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/congodb_project/com/congodb/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/congodb_project/com/congodb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/congodb_project/com/congodb/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/congodb/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/congodb/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/congodb/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/congodb/Table.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,7 +15,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/congodb/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -33,19 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/congodb/Database.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/congodb/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,10 +38,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out/production/congodb_project/com/MyDataBaseDemo/structure.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/congodb/Fields.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/congodb/Table.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,6 +96,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,13 +107,47 @@
             <path>
               <item name="congodb_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="congodb_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="congodb_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="congodb_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="congodb_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="MyDataBaseDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="congodb_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="congodb_project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,16 +228,16 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24018127" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2439577" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49924472" weight="0.9501661" />
       <window_info anchor="bottom" id="Flutter Performance" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5030211" side_tool="true" visible="true" weight="0.06478405" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5030211" side_tool="true" visible="true" weight="0.06312292" />
       <window_info anchor="bottom" id="Messages" order="3" sideWeight="0.49924472" weight="0.32724252" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49622357" weight="0.36710963" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49697885" visible="true" weight="0.06478405" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49697885" weight="0.06478405" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -264,13 +300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/congodb/Fields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/congodb/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -278,10 +307,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/congodb/Fields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/congodb_project/com/MyDataBaseDemo/structure.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/congodb/Database.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -290,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/congodb/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="349">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
