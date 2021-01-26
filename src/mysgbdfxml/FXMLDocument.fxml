@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mysgbdfxml.FXMLDocumentController">
+   <children>
+      <Pane fx:id="loginPane" layoutX="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="281.0" layoutY="67.0" style="-fx-text-fill: #93AFC3;" text="Authentification">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Pane layoutX="176.0" layoutY="86.0" prefHeight="278.0" prefWidth="349.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="60.0" layoutX="47.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="60.0" layoutX="47.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/pass.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="user" layoutX="129.0" layoutY="84.0" promptText="utilisateur" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
+                  <PasswordField fx:id="pwd" layoutX="129.0" layoutY="159.0" promptText="mot de passe" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
+                  <Button fx:id="btnLogin" layoutX="207.0" layoutY="214.0" mnemonicParsing="false" onAction="#connexion" style="-fx-background-color: #3D8ABE; -fx-border-radius: 30; -fx-background-radius: 20;" text="connexion" />
+               </children>
+            </Pane>
+            <Label layoutX="148.0" layoutY="21.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="add_bd" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="279.0" layoutY="32.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="58.0" layoutY="161.0" prefHeight="236.0" prefWidth="585.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="102.0" layoutY="37.0" style="-fx-text-fill: #93AFC3;" text="Nom de la BD">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_nombd" layoutX="258.0" layoutY="37.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
+                  <TextField layoutX="258.0" layoutY="84.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
+                  <Label layoutX="102.0" layoutY="90.0" style="-fx-text-fill: #93AFC3;" text="Nombre des tables">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="461.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#creer_in_add_bd" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="creer" />
+                  <Button layoutX="374.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#retour_in_add_bd" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="annuler" />
+               </children>
+            </Pane>
+            <Label layoutX="58.0" layoutY="121.0" style="-fx-text-fill: #93AFC3;" text="creer une base de donnees">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Pane fx:id="panel_bdexiste" layoutX="228.0" layoutY="101.0" prefHeight="236.0" prefWidth="244.0" style="-fx-background-color: #505761;" visible="false">
+               <children>
+                  <Label fx:id="txt_bdexiste" layoutX="30.0" layoutY="63.0" prefHeight="55.0" prefWidth="185.0" style="-fx-text-fill: red;" textAlignment="CENTER" />
+                  <Button fx:id="btn_retour_bdexiste" layoutX="163.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#bd_existe" text="Retour" />
+               </children>
+            </Pane>
+            <Pane fx:id="panel_bdcreer" layoutX="158.0" layoutY="53.0" prefHeight="200.0" prefWidth="397.0" style="-fx-background-color: #505761;" visible="false">
+               <children>
+                  <Label fx:id="txt_bdcreer" layoutX="19.0" layoutY="55.0" prefHeight="45.0" prefWidth="349.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="147.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#affiche_ajoute_champ" text="Ajouter les champs" />
+               </children>
+            </Pane>
+            <Pane fx:id="panel_addchamp" layoutX="37.0" layoutY="28.0" prefHeight="383.0" prefWidth="626.0" style="-fx-background-color: #505761;" visible="false">
+               <children>
+                  <Button layoutX="446.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#ajoute_table" text="Ajouter" />
+                  <TextField fx:id="txt_nomtable" layoutX="22.0" layoutY="90.0" prefHeight="25.0" prefWidth="475.0" promptText="Nom de la table" />
+                  <TextField fx:id="txt_champ1" layoutX="22.0" layoutY="140.0" prefHeight="25.0" prefWidth="304.0" promptText="champ 1" />
+                  <TextField fx:id="txt_champ2" layoutX="22.0" layoutY="174.0" prefHeight="25.0" prefWidth="304.0" promptText="champ 2" />
+                  <TextField fx:id="txt_champ3" layoutX="22.0" layoutY="207.0" prefHeight="25.0" prefWidth="304.0" promptText="champ 3" />
+                  <TextField fx:id="txt_champ4" layoutX="22.0" layoutY="239.0" prefHeight="25.0" prefWidth="304.0" promptText="champ 4" />
+                  <TextField fx:id="txt_champ5" layoutX="22.0" layoutY="272.0" prefHeight="25.0" prefWidth="304.0" promptText="champ 5" />
+                  <TextField fx:id="txt_type1" layoutX="347.0" layoutY="140.0" promptText="Type" />
+                  <TextField fx:id="txt_type2" layoutX="349.0" layoutY="173.0" promptText="Type" />
+                  <TextField fx:id="txt_type3" layoutX="350.0" layoutY="205.0" promptText="Type" />
+                  <TextField fx:id="txt_type4" layoutX="350.0" layoutY="237.0" promptText="Type" />
+                  <TextField fx:id="txt_type5" layoutX="352.0" layoutY="270.0" promptText="Type" />
+                  <Label layoutX="127.0" layoutY="14.0" prefHeight="32.0" prefWidth="362.0" text="Création de la table et des champs" textFill="#65d0b2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="371.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#bd_existe" text="Annuler" />
+               </children>
+            </Pane>
+            <Pane fx:id="panel_tablecreee" layoutX="238.0" layoutY="111.0" prefHeight="236.0" prefWidth="244.0" style="-fx-background-color: #505761;" visible="false">
+               <children>
+                  <Label fx:id="txt5" layoutX="30.0" layoutY="35.0" prefHeight="96.0" prefWidth="185.0" style="-fx-text-fill: white;" text="La table a ete creee," textAlignment="CENTER" />
+                  <Button fx:id="btn_nouvelle_oui" layoutX="163.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#bd_tablecreer_oui" text="Oui" />
+                  <Button fx:id="btn_nouvelle_table_Non" layoutX="55.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#bd_tablecreer_non" text="Non" />
+                  <Label fx:id="txt51" layoutX="30.0" layoutY="76.0" prefHeight="63.0" prefWidth="185.0" style="-fx-text-fill: white;" text="voulez vous creer une autre?" textAlignment="CENTER" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="homePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="277.0" layoutY="39.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <Pane layoutX="132.0" layoutY="131.0" prefHeight="188.0" prefWidth="437.0" style="-fx-background-color: #504D57;">
+               <children>
+                  <ImageView fx:id="btn_newbd" fitHeight="55.0" fitWidth="65.0" layoutX="119.0" layoutY="49.0" onMouseClicked="#new_bd" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/add.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btn_mesbd" fitHeight="45.0" fitWidth="61.0" layoutX="256.0" layoutY="59.0" onMouseClicked="#mesbd" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/edit.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="106.0" layoutY="114.0" style="-fx-text-fill: #93AFC3;" text="Ajouter une BD" />
+                  <Label layoutX="258.0" layoutY="114.0" style="-fx-text-fill: #93AFC3;" text="Mes BD" />
+               </children>
+            </Pane>
+            <ImageView fx:id="btnDeconnexion" fitHeight="25.0" fitWidth="41.0" layoutX="514.0" layoutY="347.0" onMouseClicked="#deconnexion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logout.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="486.0" layoutY="372.0" style="-fx-text-fill: #93AFC3;" text="se deconnecter" />
+         </children>
+      </Pane>
+      <Pane fx:id="mesbd" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="255.0" layoutY="14.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="13.0" layoutY="112.0" prefHeight="278.0" prefWidth="671.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;">
+               <children>
+                  <TableView fx:id="table_view" layoutX="14.0" layoutY="14.0" prefHeight="250.0" prefWidth="639.0">
+                    <columns>
+                      <TableColumn fx:id="colon_A" prefWidth="201.0" text="C1" />
+                      <TableColumn minWidth="0.0" prefWidth="407.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children></Pane>
+            <Label layoutX="22.0" layoutY="75.0" style="-fx-text-fill: #93AFC3;" text="Liste des bases de donnees">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="mesbd_retour" layoutX="599.0" layoutY="398.0" mnemonicParsing="false" onAction="#mesbd_retour" style="-fx-background-color: #3D8ABE; -fx-background-radius: 10;" text="retour" />
+            <Button fx:id="mesbd_supprimer" layoutX="482.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#mesbd_supprimer" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: #3D8ABE; -fx-background-radius: 10;" text="Supprimer" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

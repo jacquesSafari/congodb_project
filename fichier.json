@@ -1,0 +1,41 @@
+{
+  "nomTable": "Professeur",
+  "champs": [
+    {
+      "nom": "Id",
+      "type": "INT"
+    },
+    {
+      "nom": "Nom",
+      "type": "String"
+    },
+    {
+      "nom": "Postnom",
+      "type": "String"
+    },
+    {
+      "nom": "telephone",
+      "type": "String"
+    }
+  ],
+  "donnees": [
+    {
+      "telephone": "ohgfdjhgfc",
+      "Id": "oi",
+      "Postnom": "ojhgf",
+      "Nom": "okjhg"
+    },
+    {
+      "telephone": "jhgvc",
+      "Id": "hgf",
+      "Postnom": "jhgvc",
+      "Nom": "jhvcx"
+    },
+    {
+      "telephone": "ihgc",
+      "Id": "jhgfd",
+      "Postnom": "ihgfd",
+      "Nom": "ijhvcxojhgc"
+    }
+  ]
+}
